@@ -1,10 +1,10 @@
-import Ember from 'ember';
+import Mixin from '@ember/object/mixin';
 
 function isEqual(key, a, b) {
   return a === b;
 }
 
-export default Ember.Mixin.create({
+export default Mixin.create({
   _didChangeAttrsBuffer: null, //this tracks previous state of any `trackAttrChanges`
   didChangeAttrsConfig: [], //attributes to track
 
